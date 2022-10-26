@@ -66,7 +66,7 @@ export const NoteView = () => {
                 <UploadOutlined/>
             </IconButton>
             <Button disabled={isSaving} onClick={onSaveNote} color="primary" sx={{ padding: 2 }}>
-                <SaveOutlined sx={{ fontSize: 30, mr: 1 }} />
+                <SaveOutlined sx={{ fontSize: 30, mr: 1.1 }} />
                 Guardar
             </Button>
         </Grid>
