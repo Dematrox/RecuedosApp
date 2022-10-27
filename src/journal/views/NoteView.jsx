@@ -61,9 +61,10 @@ export const NoteView = () => {
             <Typography fontSize={ 39 } fontWeight='light' >{dateString}</Typography>
         </Grid>
         <Grid item>
-            <input type='file' multiple ref={fileInputRef} onChange={onFileInputChange} style={{display: 'none'}}/>
-            <IconButton color='primary' disabled={isSaving} onClick={() => fileInputRef.current.click()}>
-                <UploadOutlined/>
+            <input type='file' multiple ref={fileInputRef} onChange={onFileInputChange} style={{display: 'none'}} />
+            <IconButton sx={{fontSize:20}} color='primary' disabled={isSaving} onClick={() => fileInputRef.current.click()}>
+                <UploadOutlined  sx={{fontSize: 32, mr: 1.1 }}/>
+                Imagen
             </IconButton>
             <Button disabled={isSaving} onClick={onSaveNote} color="primary" sx={{ padding: 2 }}>
                 <SaveOutlined sx={{ fontSize: 30, mr: 1.1 }} />
